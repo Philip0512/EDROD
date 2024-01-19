@@ -1,7 +1,7 @@
 # EDROD: Entropy Density Ratio Outlier Detection
 
 This repo contains the official implementation fot the paper: [Robust Outlier Detection Method Based on Local Entropy and Global Density](https://arxiv.org/abs/2310.14960) by Kaituo Zhang, Wei Huang.
-
+![flowchart](/EDROD/flowchart.png)
 ## How to Run the Code
 
 ### Dependencies
