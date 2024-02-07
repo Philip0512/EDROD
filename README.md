@@ -9,7 +9,7 @@ This repo contains the official implementation fot the paper: [Robust Outlier De
 These codes need to run in a Python environment with specific package versions:
 
 - scikit-learn 1.21
-- Bumpy 1.23.5
+- Numpy 1.23.5
 - python 3.9.0
 
 ### Usage
