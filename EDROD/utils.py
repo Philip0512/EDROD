@@ -19,7 +19,7 @@ def gaussian_kernel(u):
     return (1 / np.sqrt(2 * np.pi)) * np.exp(-0.5 * u ** 2)
 
 
-def variable_kernel_density_estimation(data, bandwidth=1.0, metric="mahalanobis"):
+def variable_kernel_density_estimation(data, bandwidth=1.0, metric="euclidean"):
     n, d = data.shape
     density_estimates = np.zeros(n)
 
