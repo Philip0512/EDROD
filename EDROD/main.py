@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
 
     n_neighbors = 20
-    detector = EDROD(n_neighbors=n_neighbors, metric="mahalanobis")
+    detector = EDROD(n_neighbors=n_neighbors, metric="euclidean")
     detector.fit(data)
     EDR_Score = detector.decision_scores_
 

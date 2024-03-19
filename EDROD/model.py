@@ -42,7 +42,7 @@ class EDROD:
     # y_outlier_score is the outlier scores of samples in X.
     # You can use it to calculate AUC.
     '''
-    def __init__(self, *, n_neighbors=20, metric="mahalanobis"):
+    def __init__(self, *, n_neighbors=20, metric="euclidean"):
         self.n_neighbors=n_neighbors
         self.metric=metric
 
@@ -69,7 +69,7 @@ class EDROD:
         density = variable_kernel_density_estimation(X)
         X_normalization = normalization_for_KDTree(X)
         # Construct KDTree
-        tree = KDTree(X_normalization, metric='manhattan')
+        tree = KDTree(X_normalization)
         EDR_Score = np.array([])
         for point in X_normalization:
             md_indices = find_k_nearest_neighbors(point.reshape(1, -1), self.n_neighbors, tree)

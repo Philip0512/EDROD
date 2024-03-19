@@ -19,14 +19,14 @@ def gaussian_kernel(u):
     return (1 / np.sqrt(2 * np.pi)) * np.exp(-0.5 * u ** 2)
 
 
-def variable_kernel_density_estimation(data, bandwidth=1.0):
+def variable_kernel_density_estimation(data, bandwidth=1.0, metric="euclidean"):
     n, d = data.shape
     density_estimates = np.zeros(n)
 
     # Calculate the distance matrix for all points.
     # The method of distance measurement can be altered,
     #   and specific options can be found in the cdist documentation.
-    distances = cdist(data, data, 'mahalanobis')
+    distances = cdist(data, data, metric)
 
     # Calculate the bandwidth feature for each point.
     local_density = np.mean(distances, axis=1)
