@@ -1,7 +1,7 @@
 # EDROD: Entropy Density Ratio Outlier Detection
 
 This repo contains the official implementation fot the paper EDROD by Kaituo Zhang, Wei Huang.
-![flowchart](EDROD/utilis/flowchart.png)
+![flowchart](/EDROD/utilis/flowchart.png)
 
 **EDROD** is a parameter-free, unsupervised anomaly detection algorithm based on entropy density ratios. It detects suspicious samples in high-dimensional datasets without requiring model training.
 
@@ -16,7 +16,7 @@ This repo contains the official implementation fot the paper EDROD by Kaituo Zha
 
 We conducted experiments on real-world datasets and obtain the results.
 
-![flowchart](EDROD/utilis/real-world-result.png)
+![flowchart](/EDROD/utilis/real-world-result.png)
 
 ## 📦 Installation
 
