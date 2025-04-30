@@ -64,7 +64,7 @@ If you run the example:
 python3 main.py --data_name musk --n_neighbors 50
 ```
 
-you will get:
+You will get:
 
 ```makefile
 AUC: 1.00
