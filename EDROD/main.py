@@ -9,7 +9,7 @@ def main(args):
     path = f'{args.path_prefix}{args.data_name}_x.csv'
     path_label = f'{args.path_prefix}{args.data_name}_y.csv'
 
-    # Load feature data (first 10 columns)
+    # Load feature data 
     data = np.genfromtxt(path, delimiter=',', skip_header=1)
 
     # Initialize and fit the EDROD anomaly detector
@@ -19,7 +19,7 @@ def main(args):
     # Get anomaly scores
     edr_score = detector.decision_scores_
 
-    # Load ground truth labels (assumed to be in column 10)
+    # Load ground truth labels 
     df = pd.read_csv(path_label)
     y_true = df.iloc[:, 0]
 
