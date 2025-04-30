@@ -1,0 +1,8 @@
+# Required Python packages
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn==1.2.2
+
+# argparse is part of the Python standard library (no need to install separately)
+# Python version (recommended):
+python==3.9
