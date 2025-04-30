@@ -1,7 +1,7 @@
 # EDROD: Entropy Density Ratio Outlier Detection
 
 This repo contains the official implementation fot the paper "Robust Outlier Detection Method Based on Local Entropy and Global Density" by Kaituo Zhang, Wei Huang.
-![flowchart](/EDROD/utilis/flowchart.png)
+![flowchart](/EDROD/utilis/flowchart.pdf)
 
 **EDROD** is a parameter-free, unsupervised anomaly detection algorithm based on entropy density ratios. It detects suspicious samples in high-dimensional datasets without requiring model training.
 
